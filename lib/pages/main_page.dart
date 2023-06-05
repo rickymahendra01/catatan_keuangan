@@ -12,6 +12,18 @@ class MainPage extends StatefulWidget {
 class _MainPageState extends State<MainPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        backgroundColor: Colors.green,
+        child: Icon(Icons.add),
+      ),
+      bottomNavigationBar: BottomAppBar(
+        child: Row(children: [
+          IconButton(onPressed: () {}, icon: Icon(Icons.home)),
+          IconButton(onPressed: () {}, icon: Icon(Icons.list))
+        ]),
+      ),
+    );
   }
 }
