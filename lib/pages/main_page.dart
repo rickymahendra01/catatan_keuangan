@@ -18,10 +18,14 @@ class _MainPageState extends State<MainPage> {
         backgroundColor: Colors.green,
         child: Icon(Icons.add),
       ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       bottomNavigationBar: BottomAppBar(
-        child: Row(children: [
+        child: Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
           IconButton(onPressed: () {}, icon: Icon(Icons.home)),
-          IconButton(onPressed: () {}, icon: Icon(Icons.list))
+          SizedBox(
+            width: 20,
+          ),
+          IconButton(onPressed: () {}, icon: Icon(Icons.person))
         ]),
       ),
     );
